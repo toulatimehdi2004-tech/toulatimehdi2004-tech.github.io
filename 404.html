@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    var path = window.location.pathname.replace(/^\/+/, '');
+    if (path.startsWith('scholarship-platform/')) {
+      // Nothing needed
+    } else if (path === 'scholarship' || path === 'scholarship/' || path === 'scholarships' || path === 'scholarships/') {
+      window.location.replace('https://toulatimehdi2004-tech.github.io/scholarship-platform/scholarships/');
+    } else if (path === 'universities' || path === 'universities/' || path === 'university' || path === 'university/') {
+      window.location.replace('https://toulatimehdi2004-tech.github.io/scholarship-platform/universities/');
+    } else {
+      window.location.replace('https://toulatimehdi2004-tech.github.io/scholarship-platform/' + path + window.location.search);
+    }
+  </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px; background: #0f172a; color: white;">
+  <h2>Redirecting to ChinaScholar Platform...</h2>
+  <p><a href="https://toulatimehdi2004-tech.github.io/scholarship-platform/" style="color: #38bdf8;">Click here if not redirected automatically</a></p>
+</body>
+</html>
